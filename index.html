@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Ivrea!</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/product/">
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem; 
+        text-anchor: middle; 
+        -webkit-user-select: none; 
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller { 
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="product/product.css" rel="stylesheet">
+  </head>
+  <body>
+
+    
+<header class="site-header sticky-top py-1">
+  <nav class="container d-flex flex-column flex-md-row justify-content-between">
+    <a class="py-2 d-none d-md-inline-block" href="http://www.museotecnologicamente.it/">Ivrea</a>
+    <a class="py-2 d-none d-md-inline-block" href="https://isisbernocchi.edu.it/">Bernocchi</a>
+  </nav>
+</header>
+
+<main>
+  <div class="overflow-hidden" style="height: 600px;">
+    
+      <img src="product/src/Sfondo.jpeg">
+      <div class="centered">
+      <h1 class="display-4 fw-normal">Ivrea!</h1>
+      <p class="lead fw-normal">Il termine utopia è la maniera più comoda per liquidare quello che non si ha 
+      voglia, capacità, o coraggio di fare.</p>
+      <a class="btn btn-outline-secondary" href="#Scopri">Scopri</a>
+      
+      </div>
+    </div>
+  
+
+  <div id="Scopri" class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden zoom">
+      <div class="my-3 py-3">
+        <h2 type="button" class="display-5" data-bs-toggle="modal" data-bs-target="#Storia">Storia</h2>
+        <p class="lead">Vivi la storia dell'azienda Olivetti. <br> ‎</p>
+      </div>
+      <div class="bg-body-tertiary shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+        <img src="product/src/Storia.jpg" style="height: 100%; width: 100%; border-radius: 21px 21px 0 0;">
+      </div>
+    </div>
+
+    <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden zoom">
+      <div class="my-3 p-3">
+        <h2 type="button" class="display-5" data-bs-toggle="modal" data-bs-target="#Inizio">L'inizio</h2>
+        <p class="lead">La crescita delle macchine che hanno portato al successo l'Olivetti.</p>
+      </div>
+      <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+        <img src="product/src/Macchina.jpg" style="height: 120%; width: 100%; border-radius: 21px 21px 0 0;">
+      </div>
+    </div>
+  </div>
+
+  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+    <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden zoom">
+      <div class="my-3 p-3">
+        <h2 type="button" class="display-5" data-bs-toggle="modal" data-bs-target="#Marketing">Marketing</h2>
+        <p class="lead">I poster pubblicitari con cui l'azienda si è fatta consocere in tutto il mondo.</p>
+      </div>
+      <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+        <img src="product/src/Dante.jpg" style="height: 150%; width: 100%; border-radius: 21px 21px 0 0;">
+      </div>
+    </div>
+    <div class="text-bg-primary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden zoom">
+      <div class="my-3 py-3">
+        <h2 type="button" class="display-5" data-bs-toggle="modal" data-bs-target="#LaMiaEsperienza">La mia esperienza</h2>
+        <p class="lead">Immergiti nella mia giornata ad Ivrea! <br> ‎</p>
+      </div>
+      <div class="bg-body-tertiary shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+        <img src="product/src/Esterno (1).jpg" style="height: 120%; width: 100%; border-radius: 21px 21px 0 0;">
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="Storia" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Storia</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Costituita nel 1908 come "prima fabbrica nazionale di macchine per scrivere", fin dagli inizi l'Olivetti si distingue per l'attenzione alla tecnologia e all'innovazione, la cura del design, la presenza internazionale, la sensibilità verso gli aspetti sociali del lavoro.</p>
+          <p>Questi caratteri sono impressi dal fondatore Camillo Olivetti e dal figlio Adriano, che trasforma l'azienda familiare in un moderno gruppo industriale.</p>
+          <p>Conquistate posizioni di leadership mondiale nei prodotti meccanici per ufficio, già negli anni '50 l'Olivetti investe nella tecnologia elettronica con importanti risultati. La scomparsa di Adriano Olivetti (1960) e il peso degli investimenti rallentano la transizione verso l'elettronica;
+          ma nel 1978 esce la prima macchina per scrivere elettronica a livello mondiale e nel 1982 il primo PC professionale europeo. Negli anni '80, sostenuto da una vasta rete di accordi e alleanze, accelera lo sviluppo nell'informatica e nei sistemi.</p>
+          <p>La progressiva riduzione dei margini di redditività del business informatico e i nuovi sviluppi delle telecomunicazioni, negli anni '90 spingono l'Olivetti a spostare il baricentro verso questo settore, dapprima creando Omnitel (1990) e Infostrada (1995) e poi acquisendo il controllo di Telecom Italia (1999), con la quale si fonde nel 2003.</p>
+          <p>L’attuale Olivetti, controllata da TIM, mantiene viva la tradizione di qualità e innovazione della Società, operando sul mercato come solution provider che integra prodotti innovativi con servizi evoluti in grado di automatizzare processi e attività aziendali. L’offerta spazia dai tablet grafometrici alle lavagne interattive multimediali (LIM), 
+          alle piattaforme cloud per ambienti didattici digitali, a soluzioni innovative di Asset Management, piattaforme di Managed Print Services, registratori di cassa, POS e software integrati per la gestione automatizzata dei punti vendita, stampanti 3D, soluzioni cloud per il retail e le piccole e medie imprese, applicazioni per specifici settori di attività, ecc.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="Inizio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">L'Inizio</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="background-color: #c898ff;">
+          <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="product/src/Calcolatrice1.jpg" style="width:250px" class="rounded mx-auto d-block" >
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Summa MC 4</h5>
+                  <p>La prima calcolatrice</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="product/src/M1.jpg" style="width:400px" class="rounded mx-auto d-block" >
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>M1</h5>
+                  <p>La prima macchina per scrivere.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="product/src/PC1.jpg" style="width:700px" class="rounded mx-auto d-block">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>P101</h5>
+                  <p>Il primo personal computer.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="Marketing" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Marketing</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="background-color: #98dbff;">
+          <div id="caroselloMonello" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#caroselloMonello" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#caroselloMonello" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#caroselloMonello" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#caroselloMonello" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#caroselloMonello" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#caroselloMonello" data-bs-slide-to="5" aria-label="Slide 6"></button>
+              <button type="button" data-bs-target="#caroselloMonello" data-bs-slide-to="6" aria-label="Slide 7"></button>
+              <button type="button" data-bs-target="#caroselloMonello" data-bs-slide-to="0" aria-label="Slide 1"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="product/src/Dante.jpg" style="width:300px" class="rounded mx-auto d-block" >
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="product/src/TrenOlivetti.jpg" style="width:300px" class="rounded mx-auto d-block" >
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>              
+              <div class="carousel-item">
+                <img src="product/src/DonnaOlivetti.jpg" style="width:300px" class="rounded mx-auto d-block" >
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="product/src/Poster 1.jpg" style="width:300px" class="rounded mx-auto d-block" >
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="product/src/Poster 2.jpg" style="width:300px" class="rounded mx-auto d-block" >
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="product/src/Poster 3.jpg" style="width:300px" class="rounded mx-auto d-block" >
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="product/src/Poster 4.jpg" style="width:300px" class="rounded mx-auto d-block" >
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="product/src/Poster 5.jpg" style="width:300px" class="rounded mx-auto d-block" >
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#caroselloMonello" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#caroselloMonello" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="LaMiaEsperienza" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">La mia esperienza</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p>La mia esperienza ad Ivrea inizia con un guasto meccanico del pulmann che doveva accompagnare me e i miei
+              compagni di classe, già mi ero preparato al peggio pensando che la nostra visita fosse finita ancor prima di cominciare.</p>
+            <p>Fortunatamente, dopo un'ora e mezza arriva un altro pulmann che salva le nostre speranze e ci accompagna al Museo Olivetti.
+              Appena arrivati veniamo subito accolti dalla guida che inizia il suo percorso spiegandoci le più importanti macchine da scrivere, i calcolatori e monitor
+              dai primi realizzati fino alle ultime versioni. 
+              Rimango veramente impressionati da essi, sopratutto perchè sono macchine solamente del decennio scorso, ad oggi siamo veramente avanti anni luce!
+              Il più sorpreso e attrato, però, è di sicuro il prof Contardi! Ovunque mi girassi trovavo lui fotografare ogni cosa.
+            </p>
+            <img src="product/src/Esterno (2).jpg" style="width: 15%;">
+            <img src="product/src/Esterno (3).jpg" style="width: 15%;">
+            <img src="product/src/Esterno (4).jpg" style="width: 11%;">
+            <img src="product/src/Esterno (5).jpg" style="width: 11%;">
+            <p>Il secondo step della nostra visita è stata conoscere la storia e la nascita di Arduino, ideato e sviluppato nel 2005.
+              Con esso ci hanno permesso di realizzare qualche programma per capire come funzionasse, successivamente ci hanno mostrato la realizzazione
+              e il funzionamento di un braccio robotico! creato esclusivamente con Arduino.
+            </p>
+            <p>Nel pomeriggio abbiamo sentito il racconto di un signore che è cresciuto a Ivrea e ci ha raccontato per filo e per segno la storia di Camillo e Adriano Olivetti, 
+              sulla loro vita e sulla crescita della Olivetti. </p>
+
+             <p>Al ritorno eravamo tutti molto stanchi, soprattutto Ahmed che si è concesso una lunga dormita. </p>
+             <img src="product/src/AhmedDorme.jpg" style="width: 11%;">
+             <p>Personalmente penso sia stata una bella esperienza, sopratutto per noi ragazzi che stiamo affrontando un percorso da informatici.
+              Mi sono divertito e ho accolto positivamente la storia e il processo di una azienda storica come Olivetti.
+             </p>
+             <h5> Qui sotto le nostre abilità da Tiktoker </h5>
+             <video width="150" height="240" controls>
+              <source src="product/src/Video.mp4" type="video/mp4">
+            </video>
+          </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
